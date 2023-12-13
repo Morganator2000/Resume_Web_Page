@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <meta author = "Morgan Bakelmun">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>Morgan Bakelmun: Courses</header>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </nav>
+      </header>
+    <input type="text" id="searchBar" onkeyup="filterCourses()" placeholder="Begin typing to filter">
+    <label for="level-filter">Filter by level:</label>
+    <select id="level-filter" onchange="filterLevels()">
+        <option value="">All levels</option>
+        <option value="Level 1">Level 1</option>
+        <option value="Level 2">Level 2</option>
+        <option value="Level 3">Level 3</option>
+        <option value="Level 4">Level 4</option>
+        <option value="Level 5">Level 5</option>
+    </select>
+    <label for="level-sort">Sort by level:</label>
+    <select id="level-sort" onchange="reverseFlexbox()">
+        <option value="descending">Ascending</option>
+        <option value="ascending">Descending</option>
+    </select>
+
+    <div id="courseList" class="flexbox">
+        <div class="course">
+            <div>
+                <h1>Tech Math for Computer Science</h1>
+                <h2>MAT8001C</h2>
+                <h3>Level 1</h3>
+                <p>
+                    A math course that specifically deals with math relevant for computer programmers. 
+                    Included binary, octal, and hexidecimal conversions, Boolean algebra, and vectors.
+                </p>
+            </div>
+        <img src="images/math.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Introduction to Databases</h1>
+            <h2>CST8215</h2>
+            <h3>Level 1</h3>
+            <p>
+                The intro to Structured Query Language (SQL) and databases. 
+                We used MySQL for this course and learned how to design a relational database, including normalization.
+            </p>
+            </div>
+        <img src="images/database.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Intro to Computer Programming</h1>
+            <h2>CST8116</h2>
+            <h3>Level 1</h3>
+            <p>
+                Intro to computer programming concepts using Java. 
+                Focused on the basic concepts that are important to all high-level programming languages.
+            </p>
+            </div>
+            <img src="images/programming.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Computer Essentials</h1>
+            <h2>CST8101</h2>
+            <h3>Level 1</h3>
+            <p>
+                A brief overview of how software interacts with hardware. 
+                This was a very broad course that covered topics like operating systems, binary conversions, virtualization,
+                file management, and basic networking.
+            </p>
+            </div>
+            <img src="images/essentials.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Technical Communication for Engineering and Technology</h1>
+            <h2>ENL2019T</h2>
+            <h3>Level 2</h3>
+            <p>
+                An english class dedicated to showing students how to write technical reports and documents. 
+                It had a strong focus on working in groups and the different parts of design projects.
+            </p>
+            </div>
+            <img src="images/communication.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Web Programming</h1>
+            <h2>CST8285</h2>
+            <h3>Level 2</h3>
+            <p>
+                This class covered all of the important parts of designing a website.
+                It covered html, css, JavaScript, and php languages.
+            </p>
+            </div>
+            <img src="images/web.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Object-Oriented Programming</h1>
+            <h2>CST8284</h2>
+            <h3>Level 2</h3>
+            <p>
+                With this class I learned how to do object oriented programming with Java.
+                The concepts here are applicable to any object-oriented programming language.
+            </p>
+            </div>
+            <img src="images/OOP.jpg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Operating Systems Fundamentals (GNU/Linux)</h1>
+            <h2>CST8102</h2>
+            <h3>Level 2</h3>
+            <p>
+                Intro to operating systems and terminal commands. Specifically with linux. 
+                After taking this course I'm convinced that linux is the superior operating system.
+            </p>
+            </div>
+            <img src="images/Linux.jpeg">
+        </div>
+
+        <div class="course">
+            <div>
+            <h1>Database Systems</h1>
+            <h2>CST2355</h2>
+            <h3>Level 2</h3>
+            <p>
+                A course dedicated to several database systems including Access, Microsoft SQL Server Management, 
+                and PostgreSQL databases.
+            </p>
+            </div>
+            <img src="images/Big data.jpg">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

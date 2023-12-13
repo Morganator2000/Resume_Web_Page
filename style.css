@@ -1,0 +1,131 @@
+/* For this style, I wanted a generic dark theme without being too dark. */
+
+/* This is the start of the code that will apply to every page */
+body {
+    background-color: #1f1f1f;
+  }
+  
+  body, p, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+  h1 {
+    color:aqua;
+  }
+
+  header {
+    font-size: 36pt;
+    font-family: georgia, serif;
+    color: #fff;
+    background-color: #1f1f1f;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  nav {
+    background-color:rgb(255, 128, 0);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: rgb(255, 204, 153);
+  }
+
+  p {
+    margin-right: 20px;
+  }
+
+  p > a:visited, li > a:visited {
+    color: white;
+  }
+
+/* The code specific to the main page. */
+  .container, .course {
+    display: flex;
+    border-color: rgb(255, 128, 0);
+    border-style: solid;
+    border-width: 15px;
+    background-color: #363636;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 5px;
+  }
+
+  .container h1 {
+    padding: 20px;
+  }
+
+  .image-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .image-container img {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  /* The code specific to the resume page */
+
+    .job-container {
+      margin: 1%;
+    }
+
+/* code specific to the courses page. Note that the container code is above*/
+  .course img {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    width: 25%;
+    margin-left: auto;
+    border-color: rgb(255, 128, 0);
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /* This is going to be all of the adjustments for mobile mode. Fuck this is gonna be a lot of work. */
+  @media screen and (max-width: 767px) {
+    header {
+      font-size: 16pt;
+    }  
+    
+    .container, .course {
+      flex-direction: column;
+    }
+    
+    .course img {
+      display: none;
+    }
+
+    nav li a {
+      font-size: medium;
+    }
+
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <meta name="author" content="Morgan Bakelmun">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>Morgan Bakelmun: Courses</header>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="courses.html">Courses</a></li>
+          </ul>
+        </nav>
+      </header>
+    <input type="text" id="searchBar" placeholder="Begin typing to filter">
+    <label for="level-filter">Filter by level:</label>
+    <select id="level-filter">
+        <option value="">All levels</option>
+        <option value="Level 1">Level 1</option>
+        <option value="Level 2">Level 2</option>
+        <option value="Level 3">Level 3</option>
+        <option value="Level 4">Level 4</option>
+        <option value="Level 5">Level 5</option>
+    </select>
+    <label for="level-sort">Sort by level:</label>
+    <select id="level-sort">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+
+    <div id="courseList" class="flexbox">
+
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
