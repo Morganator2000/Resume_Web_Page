@@ -62,6 +62,69 @@ const courses = [
   "image":"images/Big data.jpg",
   "alt":"A big server room"
   },
+  {"title":"BI and Data Analytics",
+  "code":"CST8390",
+  "level":3,
+  "description":"A course where we learned business intelligence, data analytics, and machine learning. We primarily used Weka with a bit of RapidMiner.",
+  "image":"images/rapidminer.jpg",
+  "alt":"RapidMiner screenshot"
+  },
+  {"title":"OOP with Design patterns",
+  "code":"CST8288",
+  "level":3,
+  "description":"Using Java language, we learned about the many design patterns that can be employed in object-oriented programming.",
+  "image":"images/abstract_factory.png",
+  "alt":"The abstract factory design pattern"
+  },
+  {"title":"Network Programming",
+  "code":"CST8109",
+  "level":3,
+  "description":"Learned network protocols including TCP/IP and UDP. Worked with hardware like routers and switches.",
+  "image":"images/network-programming.png",
+  "alt":"A logical network diagram"
+  },
+  {"title":"Mobile Graphical Interface Programming",
+  "code":"CST2335",
+  "level":3,
+  "description":"One of my favourite courses. Learned how to program apps for Android devices using XML and Kotlin.",
+  "image":"images/google_android_studio.png",
+  "alt":"Screenshot of Android Studio"
+  },
+  {"title":"Systems Analysis and Design",
+  "code":"CST2234",
+  "level":3,
+  "description":"A course dedicated to agile and the software development lifecycle. Served as a precursor to the software development project.",
+  "image":"images/agile.jpeg",
+  "alt":"The agile lifecycle"
+  },
+  {"title":"Enterprise Application Programming",
+  "code":"CST8277",
+  "level":4,
+  "description":"using java, I learned advanced techniques for creating applications that connect to a back-end server. Lot of stuff with REST APIs.",
+  "image":"images/rest.png",
+  "alt":"The Rest API model"
+  },
+  {"title":"Programming Language Research Project",
+  "code":"CST8333",
+  "level":4,
+  "description":"Each student had to research their own programming laguage of their choice and create an application with it. I selected Rust.",
+  "image":"images/rust.png",
+  "alt":"Ferris, the Rust language mascot"
+  },
+  {"title":"Advanced Database Topics",
+  "code":"CST8276",
+  "level":4,
+  "description":"A course that taught advanced database functions in Oracle, MongoDB, and Neo4j. ",
+  "image":"images/rman.jpg",
+  "alt":"Some Rman commands that can be used with Oracle databases"
+  },
+  {"title":"Software Development Project",
+  "code":"CST8334",
+  "level":4,
+  "description":"Students were put into groups and contracted by someone outside the college to create a software program. We ended up making a hide-and-seek game using micro:bits.",
+  "image":"images/microbit.jpg",
+  "alt":"The micro:bit microcontroller"
+  },
 ];
 
 const search = document.getElementById("searchBar"); //declare what the search bar is
